@@ -30,3 +30,10 @@ With larger window widths (more data visualized), it is a good idea to downsampl
 
 ## Setting a threshold value for peak detection
 
+In the second fow of the top pannel, there are several counters in the left. These serve to adjust a treshold for peak detection. This treshold will be then used to detect the peaks in the following widget. 
+
+## Peak detection
+
+To detect peaks, switch to the next widget called "Peak finding". You can select to only detect in the current windows for quick adjustments without too much computational strain, but by default a whole dataset is analyzed. If peaks are aiming downwards (most often the case in the flow detection data), an option "inverted peaks" should be selected for the appropriate channel. Checking the options "Show filtered peaks" will show only peaks remaining after the removal of double peaks (see option "Double peak distance"). The option "Show unfiltered peaks" will show peaks that had been removed by the double peak filtering in grey. Upon selecting one or both options and clicking on the "Find peaks" button, the peaks will be automatically added to the "Raw plot data". The final peaks are shown as green vertical lines at the appropriate timestamp and the peaks that were filtered out by the double peak filter will be shown in grey if the appropriate option was selected. 
+
+Peaks can then be saved using by adding a path and a filename to the dialog in the peak finding widget and clicking on the "Save peaks" button.
